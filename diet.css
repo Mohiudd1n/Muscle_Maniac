@@ -1,0 +1,113 @@
+
+  
+  .diet-plan-table {
+    background-color: transparent;
+    gap: 10px;
+    width: 70vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    padding-top: 30px;
+  }
+  h1 {
+    font-size: 50px;
+    font-family: sans-serif;
+     color: white; 
+    text-align: center;
+
+  }
+  
+ 
+  .cell,
+  .col-header,
+  .row-header,
+  .title-header {
+    color: #fff;
+    font-family: sans-serif;
+    border-radius: 0.5rem;
+  }
+  
+  .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+    background-color: #333;
+  }
+  
+  .col-header {
+    background-color: teal;
+  }
+  
+  .row-header {
+    background-color: crimson;
+  }
+  
+  .title-header {
+    background-color: rebeccapurple;
+  }
+  
+  .long-cell {
+    grid-column: span 8;
+  
+  }
+
+body {
+  margin: 0;
+  background-image: url("./hbg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.text {
+  color: white;
+  font-size: 50px;
+  font-family: sans-serif;
+}
+
+.head {
+  border-left: 5px solid white;
+  padding-left: 10px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+.container {
+  position: absolute;
+  left: 50px;
+  top: 50%;
+  width: calc(100vw - 100px);
+  height: 400px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  transform: translateY(-50%);
+}
+
+.btn {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border: 2px solid white;
+  transition: 0.2s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn img {
+  width: 50%;
+  height: 50%;
+}
+
+.btn:hover {
+  scale: 0.98;
+}
+  
